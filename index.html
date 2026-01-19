@@ -4,19 +4,121 @@
   <meta charset="UTF-8" />
   <title>ColoredWind</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Local-first AI tools for creators." />
+
   <style>
+    :root {
+      --bg: #f8fafc;
+      --text: #0f172a;
+      --muted: #475569;
+      --accent: #0ea5e9;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont;
-      display: flex;
-      height: 100vh;
-      align-items: center;
-      justify-content: center;
-      background: #f7f9fc;
-      color: #333;
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont,
+                   "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 720px;
+      padding: 80px 24px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+    }
+
+    .tagline {
+      font-size: 1.2rem;
+      color: var(--muted);
+      margin-bottom: 3rem;
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+    }
+
+    p {
+      margin: 0.5rem 0;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+      margin: 0.75rem 0;
+    }
+
+    li {
+      margin: 0.4rem 0;
+    }
+
+    footer {
+      margin-top: 4rem;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    .accent {
+      color: var(--accent);
+      font-weight: 500;
     }
   </style>
 </head>
 <body>
-  <h1>🌬️ ColoredWind</h1>
+  <main class="container">
+    <h1>ColoredWind</h1>
+    <p class="tagline">Local-first AI tools for creators.</p>
+
+    <section>
+      <p>
+        We build fast, controllable AI tools that run where your work lives —
+        <span class="accent">on your machine</span>.
+      </p>
+    </section>
+
+    <section>
+      <h2>First product</h2>
+      <p><strong>AI Dubber</strong></p>
+      <p>
+        Automatic, editable video dubbing with precise subtitle alignment.
+      </p>
+      <ul>
+        <li>Local processing</li>
+        <li>Segment-level control</li>
+        <li>Human-in-the-loop editing</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Vision</h2>
+      <p>
+        Creators deserve AI that is transparent, inspectable,
+        and under their control.
+      </p>
+    </section>
+
+    <footer>
+      <p>Coming soon.</p>
+      <p>Built by engineers, for serious users.</p>
+    </footer>
+  </main>
 </body>
 </html>
